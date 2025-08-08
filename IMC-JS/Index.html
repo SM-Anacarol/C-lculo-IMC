@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Cálculo IMC</title>
+    <!-- Link para o CSS externo -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link para o JavaScript externo -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Seção inicial - Explicação -->
+        <header>
+            <h1>🚀 <span>Por que acompanhar o IMC?</span></h1>
+            <p>📊 O Índice de Massa Corporal (IMC) é uma ferramenta simples e eficaz para avaliar se o seu peso está adequado em relação à sua altura. Acompanhar o IMC ajuda a identificar riscos para a saúde relacionados ao sobrepeso e à obesidade, como doenças cardiovasculares, diabetes tipo 2, hipertensão e outras complicações.</p>
+            
+            <h2>🔍 Causas da obesidade</h2>
+            <ul>
+                <li>🍔 Alimentação inadequada (excesso de calorias, gorduras e açúcares)</li>
+                <li>🛋️ Sedentarismo (falta de atividade física regular)</li>
+                <li>🧬 Fatores genéticos e hormonais</li>
+                <li>😔 Problemas emocionais e psicológicos</li>
+                <li>💊 Uso de certos medicamentos</li>
+            </ul>
+
+            <h2>⚠️ Consequências da obesidade</h2>
+            <ul>
+                <li>❤️ Maior risco de doenças cardíacas e derrame</li>
+                <li>🩸 Diabetes tipo 2</li>
+                <li>🫀 Hipertensão arterial</li>
+                <li>🦴 Problemas nas articulações</li>
+                <li>😴 Dificuldades respiratórias e apneia do sono</li>
+                <li>⏰ Redução da qualidade e expectativa de vida</li>
+            </ul>
+        </header>
+
+        <!-- Tabela de IMC -->
+        <section id="tabela-imc">
+            <h2>📋 Tabela de IMC recomendado</h2>
+            <table class="tabela-imc">
+                <tr>
+                    <th>Condição</th>
+                    <th>👩 Mulheres</th>
+                    <th>👨 Homens</th>
+                </tr>
+                <tr>
+                    <td>🥗 Abaixo do peso</td>
+                    <td>&lt; 19,1</td>
+                    <td>&lt; 20,7</td>
+                </tr>
+                <tr>
+                    <td>✅ Normal</td>
+                    <td>19,1 - 25,8</td>
+                    <td>20,7 - 26,4</td>
+                </tr>
+                <tr>
+                    <td>⚖️ Pouco acima do peso</td>
+                    <td>25,9 - 27,3</td>
+                    <td>26,5 - 27,8</td>
+                </tr>
+                <tr>
+                    <td>📈 Acima do peso</td>
+                    <td>27,4 - 32,3</td>
+                    <td>27,9 - 31,1</td>
+                </tr>
+                <tr>
+                    <td>🏥 Obeso</td>
+                    <td>&gt; 32,3</td>
+                    <td>&gt; 31,1</td>
+                </tr>
+            </table>
+
+            <!-- Botão âncora que leva para a calculadora -->
+            <p style="text-align:center; margin-top: 24px;">
+                <a href="#calcular-imc" class="btn">🧮 Venha calcular seu IMC</a>
+            </p>
+        </section>
+
+        <!-- Calculadora de IMC -->
+        <section id="calcular-imc">
+            <h2>🧮 Calcule seu IMC</h2>
+            <form onsubmit="return false;">
+                <label for="idpeso">⚖️ Digite o peso (kg):</label>
+                <input type="text" id="idpeso" placeholder="Ex: 70.5">
+
+                <label for="idaltura">📏 Digite a altura (m):</label>
+                <input type="text" id="idaltura" placeholder="Ex: 1.75">
+
+                <!-- Botões -->
+                <input type="button" class="btn" value="🔢 Calcular" onclick="calcular()">
+                <input type="reset" class="btn" value="🗑️ Cancelar" onclick="limpar()">
+            </form>
+
+            <!-- Resultado será exibido aqui -->
+            <div class="resultado" id="Resultado"></div>
+        </section>
+    </div>
+</body>
+</html>
