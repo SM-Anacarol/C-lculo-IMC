@@ -25,5 +25,5 @@ Este repositório faz parte dos meus primeiros projetos e representa um registro
 ---
 
 ## 👩‍💻 Autor  
-Desenvolvido por Ana Caroline Mendes Pires durante o ensino médio.  
+Desenvolvido por **Ana Caroline Mendes Pires** durante o ensino médio.  
 📅 Primeiros passos no desenvolvimento web.
